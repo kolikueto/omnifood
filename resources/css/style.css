@@ -6,7 +6,8 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
 }
 
 html,
@@ -43,6 +44,7 @@ body {
 /*---------------------------------------------------------------- */
 
 header {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.7)), to(rgba(0, 0, 0, 0.7))), url(/resources/css/img/hero.jpg);
     background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(/resources/css/img/hero.jpg);
     background-size: cover;
     background-position: center;
@@ -54,7 +56,8 @@ header {
     width: 1140px;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
 }
 
 h1, h2, h3 {
@@ -149,6 +152,7 @@ section {
 /*---------------------------------------------------------------- */
 
 header {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.7)), to(rgba(0, 0, 0, 0.7))), url(/resources/img/hero.jpg);
     background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(/resources/img/hero.jpg);
     background-size: cover;
     background-position: center;
@@ -160,7 +164,8 @@ header {
     width: 1140px;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
 }
 
 .btn:link, .btn:visited, input[type=submit] {
@@ -169,6 +174,7 @@ header {
     font-weight: 300;
     text-decoration: none;
     border-radius: 200px;
+    -webkit-transition: background-color 0.2s, border 0.2s, color 0.2s;
     transition: background-color 0.2s, border 0.2s, color 0.2s;
 }
 
@@ -208,6 +214,7 @@ a:link, a:visited {
     text-decoration: none;
     border-bottom: 1px solid #e67e22;
     padding-bottom: 1px;
+    -webkit-transition: border-bottom 0.2s, color 0.2s;
     transition: border-bottom 0.2s, color 0.2s;
 }
 
@@ -222,6 +229,7 @@ a:hover, a:active {
 /*---------------------------------------------------------------- */
 
 header {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.7)), to(rgba(0, 0, 0, 0.7))), url(/resources/css/img/hero.jpg);
     background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(/resources/css/img/hero.jpg);
     background-size: cover;
     background-position: center;
@@ -234,7 +242,8 @@ header {
     width: 1140px;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
 }
 
 .logo {
@@ -261,6 +270,7 @@ header {
     text-transform: uppercase;
     font-size: 90%;
     border-bottom: 2px solid transparent;
+    -webkit-transition: 0.2s;
     transition: 0.2s;
     padding: 8px 0px;
 }
@@ -268,7 +278,14 @@ header {
 .main-nav li a:hover, .main-nav li a:active {
     border-bottom: 2px solid #e67e22;
 }
-
+/*---Sticky navi--*/
+.sticky{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width:100%;
+    background-color: rgba(255, 255, 255, 0.98);
+}
 /*---------------------------------------------------------------- */
 
 /*FEATURES
@@ -309,14 +326,22 @@ header {
     opacity: 0.7;
     width: 100%;
     height: auto;
-    transform: scale(1.15);
+    -webkit-transform: scale(1.15);
+            transform: scale(1.15);
+    -webkit-transition: -webkit-transform 0.2s;
+    transition: -webkit-transform 0.2s;
     transition: transform 0.2s;
+    transition: transform 0.2s, -webkit-transform 0.2s;
 }
 
 .meal-photo img:hover {
     opacity: 1;
-    transform: scale(1.03);
+    -webkit-transform: scale(1.03);
+            transform: scale(1.03);
+    -webkit-transition: -webkit-transform 0.5s;
+    transition: -webkit-transform 0.5s;
     transition: transform 0.5s;
+    transition: transform 0.5s, -webkit-transform 0.5s;
     opacity: 0.5s;
 }
 
@@ -362,7 +387,7 @@ header {
     padding: 5px;
     font-size: 150%;
     margin-right: 25px;
-    float: left;
+    display: inline-block;
 }
 
 .btn-app img {
@@ -396,6 +421,7 @@ header {
 /*---------------------------------------------------------------- */
 
 .section-testimonials {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.8)), to(rgba(0, 0, 0, 0.8))), url(/resources/css/img/back-customers.jpg);
     background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(/resources/css/img/back-customers.jpg);
     background-size: cover;
     color: #fff;
@@ -446,7 +472,8 @@ cite img {
     border-radius: 5px;
     width: 90%;
     margin-left: 5%;
-    box-shadow: 0 2px 2px #efefef;
+    -webkit-box-shadow: 0 2px 2px #efefef;
+            box-shadow: 0 2px 2px #efefef;
 }
 
 .plan-box div {
@@ -552,6 +579,7 @@ footer {
     text-decoration: none;
     border: 0;
     color: #888;
+    -webkit-transition: color 0.2s;
     transition: color 0.2s;
 }
 
@@ -570,6 +598,7 @@ footer p {
 }
 
 .ion-social-facebook, .ion-social-twitter, .ion-social-googleplus, .ion-social-instagram {
+    -webkit-transition: color 0.2s;
     transition: color 0.2s;
 }
 
