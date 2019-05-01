@@ -366,6 +366,14 @@
         <div class="row">
             <h2> We're happy to hear from you</h2>
             <div class="row">
+                <?php
+                if($_Get¨['success']== 1){
+                    echo="<div class=\"form-messages success\">Thank you! Your message has been sent</div>";
+                }
+                if($_Get¨['success']== -1){
+                    echo="<div class=\"form-messages error\">Oops! Something went wrong</div>";
+                }
+                    ?>
             </div>
             <div class="row">
                 <form method="POST" action="mailer.php" class="contact-form">
